@@ -131,13 +131,13 @@ color: rgb(0, 0, 0);
 }
 
 
-/* Flexbox */
+/* CARDS & NUMBERS */
 .cards, .numbers {
   display: flex;
   justify-content: center;
   font-size: 30px;
   color: #ffffff;
-  padding-top: 25px;
+  padding-top: 45px;
   text-align: center;
   line-height: 200px;
 }
@@ -174,7 +174,7 @@ color: rgb(0, 0, 0);
 }
 
 
-/* news */
+/* NEWS */
 .news {
   display: flex;
   flex-direction: row;
@@ -203,29 +203,27 @@ color: rgb(0, 0, 0);
   border-radius: 5px;
 }
 
-#date {
+#newsp {
   padding: 25px 0 0 25px;
 }
 
-#newscontent {
+#newsh {
   padding: 0 25px 25px 25px;
 }
 
-/* references */
+/* REFERENCES */
 .references {
   display: flex;
   align-items: stretch;
   flex-direction: row;
   justify-content: center;
-  flex-wrap: wrap;
   font-size: 30px;
   color: black;
 }
 
-#ref0 {
+#ref0, #let0 {
   width: 100%;
   height: 100px !important;
-  align-self: stretch !important;
   margin-top: 25px;
   text-align: center;
 }
@@ -236,4 +234,43 @@ color: rgb(0, 0, 0);
   background-color: white;
   border: 1px solid;
   border-color: #00000028;
+  width: 250px;
+
+}
+
+#refp {
+  font-size: 20px;
+}
+
+#refp, #refh {
+  text-align: center;
+  padding: 0 25px 25px 25px;
+}
+
+/* NEWSLETTER */
+
+.letter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: black;
+  margin-bottom: 50px;
+}
+
+#letp {
+  width: 100%;
+  text-align: center;
+}
+
+
+/* FOOTER */
+
+footer {
+  background-color: black;
+  height: 300px;
+}
+
+.subscribe {
+  align-items: center;
 }
