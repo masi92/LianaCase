@@ -107,48 +107,31 @@ form {
 
 /* topbar */
 .top-bar {
-  background-color: #4c8930;
   display: flex;
   justify-content: flex-end;
-}
-
-.top-bar ul {
-  list-style: none;
-  padding-top: 10px;
-  padding: 15px 10% 0 0;
   background-color: #4c8930;
-}
 
-.top-bar li {
-  display: inline;
-  background-color: #4c8930;
-  padding: 10px;
-}
-
-.top-bar li a {
-  transition: all 0.3s ease 0s;
-  color: #ffffff;
-
-}
-
-.top-bar li a:hover {
-  color: #000000;
 }
 
 .top-bar a {
-  color: rgb(0, 0, 0);
+  display: inline;
+  background-color: #4c8930;
+  padding: 10px;
+  transition: all 0.3s ease 0s;
+  color: #ffffff;
+}
+
+.top-bar a:hover {
+  color: #000000;
 }
 
 /* OTSIKOT */
 
 
 /* CARDS & NUMBERS */
-.cards, .numbers {
+.cards {
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
   font-size: 30px;
   color: #ffffff;
   padding-top: 45px;
@@ -156,32 +139,40 @@ form {
   line-height: 200px;
 }
 
-#company {
+.cards__single {
   font-size: 21px;
   border-radius: 5px;
   width: 400px;
+  background-repeat: no-repeat;
+  height: 200px;
+
+}
+
+.cards__single--company {
   background-image: url(../img/1.png);
-  background-repeat: no-repeat;
 }
 
-#projects {
-  font-size: 21px;
-  border-radius: 5px;
-  width: 400px;
+.cards__single--projects {
   background-image: url(../img/2.png);
-  background-repeat: no-repeat;
 }
 
-#contact {
-  font-size: 21px;
-  border-radius: 5px;
-  width: 400px;
+.cards__single--contact {
   background-image: url(../img/3.png);
-  background-repeat: no-repeat;
 }
 
 .numbers {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  color: #ffffff;
+  padding-top: 45px;
   font-size: 15px;
+  color: black;
+}
+
+.count {
+  color: #fff;
+  font-size: 25px;
   color: black;
 }
 
@@ -219,32 +210,44 @@ form {
 /* REFERENCES */
 .references {
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  align-items: stretch;
   font-size: 30px;
   color: black;
+  justify-content: space-around;
 }
 
-#ref1, #ref2, #ref3, #ref4 {
-  margin: 0 1em 0 1em;
-  margin-bottom: 50px;
-  background-color: white;
+.references__single {
   border: 1px solid;
-  border-color: #00000028;
-  width: 250px;
+  border-color: lightgray;
+  height: 250px;
 }
 
-#refp, #refh {
+.references__single__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid lightgray;
+  height: 50%;
+}
+
+.references__single__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
   text-align: center;
-  padding: 0 25px 25px 25px;
 }
 
-#refp {
+.reference__img {
+  width: 180px;
+}
+
+.refp {
   font-size: 12px;
 }
 
-#refh {
+.refh {
   font-size: 20px;
 }
 
@@ -325,4 +328,3 @@ footer {
   margin-top: 50px;
   align-self: flex-end;
 }
-

@@ -16,10 +16,8 @@
 
     <!-- Top & navbar -->
     <div class="top-bar">
-        <ul>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Intranet</a></li>
-        </ul>
+        <a href="#">News</a>
+        <a href="#">Intranet</a>
     </div>
     <div class="navbar">
         <img class="logo" src="img/liana-logo.png" alt="logo">
@@ -45,29 +43,41 @@
         </div>
     </header>
 
-    <!-- CARDS -->
-    <div class="cards">
-        <div id="company">Company</div>
-        <div id="projects">Projects</div>
-        <div id="contact">Contact Us</div>
-    </div>
+    <div class="container">
 
-    <!-- NUMBERS -->
-    <div class="numbers">
-        <div class="business" id="clients">
-            <img class="logo" src="img/business.png" alt="business">
-            Clients
+        <!-- CARDS -->
+        <div class="row cards">
+            <div class="col-3 cards__single cards__single--company">
+                <span>Company</span>
+            </div>
+            <div class="col-3 cards__single cards__single--projects">
+                <span>Projects</span>
+            </div>
+            <div class="col-3 cards__single cards__single--contact">
+                <span>Contact Us</span>
+            </div>
         </div>
-        <div id="employees">
-            <img class="logo" src="img/face.png" alt="face">
-            Employees
-        </div>
-        <div id="users">
-            <img class="logo" src="img/public.png" alt="public">
-            Daily users
+
+        <!-- NUMBERS -->
+        <div class="row numbers">
+            <div class="col-3 ">
+                <img class="icon" src="img/business.png" alt="business">
+                <span class="count" >3000</span>
+                <p>Clients</p>
+            </div>
+            <div class="col-3 ">
+                <img class="icon" src="img/face.png" alt="face">
+                <span class="count">180</span>
+                <p>Employees</p>
+            </div>
+            <div class="col-3 ">
+                <img class="icon" src="img/public.png" alt="public">
+                <span class="count">10000</span>
+                <p>Daily users</p>
+            </div>
         </div>
     </div>
-    
+        
     <!-- NEWS -->  
     <div style="background-color:#eceeef; height:100px; padding-top:12px;">
         <h2>Latest news</h2>
@@ -87,34 +97,51 @@
         </div>
     </div>
 
-    <!-- REFERENCES -->
-    <h2>References</h2>
-    <div class="references">
-        <div id="ref1">
-            <img class="logo" src="img/bosch.png" alt="bosch">
-            <hr>
-            <h3 id="refh">Robert Bosch</h3>
-            <p id="refp">Bosch is multinational engineering and electronics company.</p>
-        </div>
-        <div id="ref2">
-            <img class="logo" src="img/bodyshop.png" alt="bodyshop">
-            <hr>
-            <h3 id="refh">The Body Shop</h3>
-            <p id="refp">The Body Shop is a global beauty brand and it has more than 3,000 stores in more than 60 countries.</p>
-        </div>
-        <div id="ref3">
-            <img class="logo" src="img/lapland.png" alt="lapland">
-            <hr>
-            <h3 id="refh">Lapland Hotels</h3>
-            <p id="refp">Lapland Hotels is the largest and the most diverse hotel chain in Lapland.</p>
-        </div>
-        <div id="ref4">
-            <img class="logo" src="img/ikea.png" alt="ikea">
-            <hr>
-            <h3 id="refh">IKEA</h3>
-            <p id="refp">IKEA is multinational furniture store.</p>
+    <div class="container">
+
+        <!-- REFERENCES -->
+        <h2>References</h2>
+        <div class="references row">
+            <div class="references__single col-2">
+                <div class="references__single__img ">
+                    <img class="reference__img" src="img/bosch.png" alt="bosch">
+                </div>
+                <div class="references__single__content">
+                    <h3 class="refh">Robert Bosch</h3>
+                    <p class="refp">Bosch is multinational engineering and electronics company.</p>
+                </div>
+            </div>
+            <div class="references__single col-2">
+                <div class="references__single__img">
+                    <img class="reference__img" src="img/bodyshop.png" alt="bodyshop">
+                </div>
+                <div class="references__single__content">
+                    <h3 class="refh">The Body Shop</h3>
+                    <p class="refp">Bosch is multinational engineering and electronics company.</p>
+                </div>
+            </div>
+            <div class="references__single col-2">
+                <div class="references__single__img">
+                    <img class="reference__img" src="img/lapland.png" alt="lapland">
+                </div>
+                <div class="references__single__content">
+                    <h3 class="refh">Lapland Hotels</h3>
+                    <p class="refp">Bosch is multinational engineering and electronics company.</p>
+                </div>
+            </div>
+            <div class="references__single col-2">
+                <div class="references__single__img">
+                    <img class="reference__img" src="img/ikea.png" alt="ikea">
+                </div>
+                <div class="references__single__content">
+                    <h3 class="refh">Ikea</h3>
+                    <p class="refp">Bosch is multinational engineering and electronics company.</p>
+                </div>
+            </div>
+
         </div>
     </div>
+
 
     <hr>
 
@@ -154,15 +181,15 @@
                     <li><a href="#">Intranet</a></li>
                 </ul>
                 <ul class="socials">
-                    <a href="#"><li class="social">
+                    <a href="#" class="social">
                         <i class="fa fa-facebook-f" aria-hidden="true"></i>
-                    </li></a>
-                    <a href="#"><li class="social">
+                    </a>
+                    <a href="#" class="social">
                         <i class="fa fa-twitter" aria-hidden="true"></i>
-                    </li></a>
-                    <a href="#"><li class="social">
+                    </a>
+                    <a href="#" class="social">
                         <i class="fa fa-linkedin" aria-hidden="true"></i>
-                    </li></a>
+                    </a>
                 </ul>
             </div>
         </div>
@@ -171,8 +198,11 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script defer src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <script defer src="js/js.js"></script>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
