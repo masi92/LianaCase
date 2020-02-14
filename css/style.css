@@ -149,15 +149,15 @@ form {
 }
 
 .cards__single--company {
-  background-image: url(../img/1.png);
+  background-image: url(../img/company.png);
 }
 
 .cards__single--projects {
-  background-image: url(../img/2.png);
+  background-image: url(../img/products.png);
 }
 
 .cards__single--contact {
-  background-image: url(../img/3.png);
+  background-image: url(../img/contact.png);
 }
 
 .numbers {
